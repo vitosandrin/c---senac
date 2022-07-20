@@ -4,10 +4,12 @@
 #include<iostream> //Input / output stream 
 
 using namespace std; //Use IO (cin / cout)
-int age;
+int age, year, year1;
 float score, score1, score2, score3;
 
 //Void function
+
+
 void calculateAverage (float score, float score1, float score2, float score3) {
 	float average = (score+score1+score2+score3)/4;
 	cout<<"\n\n Your average is: "<<average;
@@ -16,6 +18,11 @@ void calculateAverage (float score, float score1, float score2, float score3) {
 	} else {
 		cout<<"\n You are reproved!";
 	};
+}
+
+void calculateAge(int year, int year1){
+	int target = (year1 - year);
+	cout<<"\n\n In "<<year1<<" you will have "<<target<<" years!";
 }
 
 main() //Main function
@@ -39,9 +46,15 @@ main() //Main function
 	cin>>score>>score1>>score2>>score3;
 	
 	cout<<"\n\n Your scores is: "<<score<<" ,"<<score1<<" ,"<<score2<<" ,"<<score3;
-	
-	//Call function
 	calculateAverage(score, score1, score2, score3);
+	
+	cout<<"\n\n Enter your year birth: ";
+	cin>>year;
+	cout<<"\n\n Enter some year: ";
+	cin>>year1;
+	calculateAge(year, year1);
+	
+
 	
 	
 }
