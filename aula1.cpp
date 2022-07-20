@@ -16,6 +16,5 @@ main() //Main function
 	cout<<"\n Write your age: ";
 	cout<<"\n";
 	cin>>age;
-	cout<<"\n Your age is: ";
-	cout<<age;
+	cout<<"\n Your age is: "<<age;
 }
