@@ -4,7 +4,8 @@ using namespace std; //Use IO (cin / cout)
 
 main() //Main function
 {
-	system("chcp 65000")
+	system("chcp 65001") //To use accent in strings
+	
 	cout<<"\tHello world"; // \t TAB
 	cout<<"\nWelcome to dev world"; // \n jump line 
 	cout<<"\n\n\n";
