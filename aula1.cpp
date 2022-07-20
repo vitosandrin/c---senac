@@ -7,6 +7,7 @@ using namespace std; //Use IO (cin / cout)
 int age;
 float score, score1, score2, score3;
 
+//Void function
 void calculateAverage (float score, float score1, float score2, float score3) {
 	float average = (score+score1+score2+score3)/4;
 	cout<<"\n\n Your average is: "<<average;
@@ -39,6 +40,7 @@ main() //Main function
 	
 	cout<<"\n\n Your scores is: "<<score<<" ,"<<score1<<" ,"<<score2<<" ,"<<score3;
 	
+	//Call function
 	calculateAverage(score, score1, score2, score3);
 	
 	
